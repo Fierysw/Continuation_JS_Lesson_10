@@ -5,12 +5,6 @@ const content = document.querySelector('.content-box');
 const data = JSON.parse(dataOpenApi);
 console.log(data)
 
-// data.forEach(element => {
-//   const img = document.createElement('img');
-//   img.src = element.imgUrl;
-//   document.querySelector('.content-box').appendChild(img);
-// });
-
 data.forEach(({imgUrl, activity, type, participants, price, link, key, accessibility}) => {
   const div = document.createElement('div');
   div.classList.add('card');
